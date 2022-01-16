@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap%27');
+@charset "UTF-8";
+/* 共通部分
+------------------------------- */
+html {
+    font-size: 100%;
+}
+body{
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+    line-height: 1.7;
+    color: #432;
+    background-size: contain;
+    
+/*    background-position: 50% 50%;*/
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+.wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+ 大きな背景画像 
+.big-big {
+/*    background-img: url("/images/bg_bomb.png")*/
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+/* 見出し */
+.page-title {
+    font-size: 5rem;
+    font-family: 'DotGothic16', sans-serif;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: black;
+/*    background-color: black;*/
+}
+.sub-title {
+    font-size: 1.375rem;
+    padding: 0 8px 8px;
+    border-bottom: 2px #0bd solid;
+    font-weight: normal;
+}
+
+/* iframe */
+iframe {
+    width: 100%;
+}
+
+/* HEADER
+------------------------------- */
+.page-header {
+    height: 100px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    line-height: 100px;
+    margin-left: 0px;
+}
+.logo {
+    width: 120px;
+    margin-top: 10px;
+}
+.main-nav {
+    display: flex;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-top: 3px;
+    list-style: none;
+}
+.main-nav li {
+    margin-left: 50px;
+}
+.main-nav a {
+    color: #432;
+}
+.main-nav a:hover {
+    color: #0bd;
+}
+
+/* HOME
+------------------------------- */
+#home {
+    background-image: url(../images/1.jpg);
+    min-height: 150vh;
+}
+#home .page-title {
+    text-transform: none;
+}
+.home-content {
+    text-align: left;
+    margin-top: 20%;
+}
+.home-content p {
+    font-size: 1.125rem;
+    margin: 10px 0 42px;
+    color:#fff
+}
+
+/* Jouhyou
+------------------------------- */
+#jouhyou {
+    background-image: url(../images2/jouhyou.jpg);
+    height: 230px;
+/*    margin-bottom: 40px;*/
+}
+#jouhyou .page-title {
+    text-align: left;
+}
+.jouhyou-contents {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.flex {
+  display: flex; /*横並び*/
+}
+
+/* 記事部分 */
+.flex .image {
+  width: 800px; /*画像サイズ指定*/
+  margin: 0;
+  padding: 60px;
+  overflow: hidden;
+/* position: relative;*/
+    text-align:right;
+}
+article {
+    height: 100%;
+    text-align: left;
+    padding-left:50px;
+    padding-right:60px;
+    padding-bottom:20px;
+    color:#333;
+    float:left;
+/*    position: relative;*/
+}
+article p{
+    position: absolute;
+    
+}
+.post-info {
+    position: relative;
+    padding-top: 4px;
+    margin-bottom: 40px;
+}
+.post-title {
+    font-family: "Yu Mincho", "YuMincho", serif;
+    font-size: 2rem;
+    font-weight: normal;
+    padding-left:20px;
+}
+.post-title,
+article p {
+    margin-bottom: 1rem;
+}
+
+
+aside {
+    width: 25%;
+    float:right;
+}
